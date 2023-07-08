@@ -6,22 +6,21 @@
     <title>Form</title>
     <style>
         body{
-            background-color: blue; 
-            background-image: linear-gradient(70deg, #0052b0, #b340b3); 
+            background-image: linear-gradient(70deg, #1E0A51, #620093, #EF355C); 
         }
         .box1{
             margin-left: 20%;
             margin-top: 10%;
             height: 600px;
             width: 60%;
-            background-color: lightskyblue;
+            background-color: #44C3E6;
         }
          .box2{
-            margin-left: 15%;
+            margin-left: 20%;
             margin-top: 12%;
             height: 400px;
-            width: 70%;
-            background-color: chocolate;
+            width: 60%;
+            background-color: #FEFEFE;
             display: inline-block;
         
         }
@@ -31,11 +30,23 @@
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        input{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 50%;
+            height: 30px;
+            border: 1px solid #EEEEEE;
+        }
         .btn{
-            background-color: royalblue;
+            background-color: #44C3E6;
             color: aliceblue;
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 52%;
+            height: 35px;
+        }
+        h3{
+            color: #44C3E6;
         }
     </style>
 </head>
@@ -44,9 +55,9 @@
         <div class="box2">
             <div class="form">
              <form action="">  
-                <label for="username">Username:</label>
+                <h3>Login 
+                To Your Account</h3>
                 <input type="text" id="username" name="username" required placeholder="username"> <br> <br>
-                <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required placeholder="password"> <br> <br>
                 <input type="button" value="Log In" class="btn">
           </form>
