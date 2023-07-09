@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Form</title>
+    <style>
+          body{
+            background-image: linear-gradient(-70deg,#7079EE, #F00BFC, #06D6E0, #9659F4); 
+        }
+        .form{
+            width: 45%;
+            height: 550px;
+            background-color: #FFFFFF;
+            margin: 10% auto;
+            border-radius: 2%;
+            text-align:justify;
+            padding: 2%;
+            align-items: center;  
+        }
+        button{
+            width: 30%;
+            height: 4em;
+            border: 1px solid #B1C2D9;
+            border-radius: 5%;
+            margin-left: 2%;
+            }
+        [data-facebook]{
+            background-color: #3D599A;
+            color: #CDDAEE;
+
+        }
+        [data-google]{
+            background-color: #FFFFFF;
+            color: #6F6F6F;
+        }
+        input{
+            height: 4em;
+            width: 60%;
+            border: 1px solid #B1C2D9;
+            border-radius: 10%;
+        }
+        [data-heading="heading"]{
+            margin-left: 33%;
+        }
+        [data-para="para"]{
+            margin-left: 33%;
+        }
+        [data-facebook="facebook"]{
+            margin-left: 15%;
+        }
+        [data-username="username"]{
+            margin-left: 15%;
+        }
+        [data-inputUsername="inputUsername"]{
+            margin-left: 15%;
+        }
+        .signin{
+            background-color: #333333;
+            color: #C8C8C8;
+            width: 62%;
+            height: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 data-heading="heading">Sign In With</h1> <br> <br>
+        <button data-facebook="facebook">Facebook</button>
+        <button data-google="google">Google</button> <br><br>
+        <label for="username" data-username="username">Username</label> <br> <br>
+        <input type="text" id="username" name="username" data-inputUsername="inputUsername" required> <br> <br>
+        <label for="password" data-password="password" data-username="username">Password</label> <br> <br>
+        <input type="password" id="password" name="password" data-inputUsername="inputUsername" required> <br> <br> <br>
+        <input type="button" value="Sign In" class="signin" data-inputUsername="inputUsername"> <br><br><br>
+        <p data-para="para">Not a member?
+            <a href="#">Sign up now</a>
+        </p>
+    </div>
+</body>
+</html>
